@@ -1,0 +1,57 @@
+name: muslim_dialy_guide
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.9.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  #####--------------------------------  Provider  ----------------------------#####
+  provider: ^5.0.0
+  #####----------------------------  SharedPreferences  -----------------------#####
+  shared_preferences: #^2.0.4
+  #####------------------------------- native pdf view  ----------------------------#####
+  native_pdf_view: ^2.1.1
+  #####-------------------------------- device info  ----------------------------#####
+  device_info: 2.0.2
+  #####--------------------------------  screen  ----------------------------#####
+  screen: 0.0.5
+  #####------------------------------- Flutter toast  ----------------------------#####
+  fluttertoast: 8.0.8
+  #####--------------------------------  lottie  ----------------------------#####
+  lottie:
+  #####----------------------------  Flutter Qiblah  ----------------------------#####
+  flutter_qiblah: ^2.0.0
+  #####--------------------------------  SVG  ----------------------------#####
+  flutter_svg: ^0.21.0+1
+  #####------------------------------- Google Maps  ----------------------------#####
+  google_maps_flutter: ^2.0.3
+  #####-----------------------------  Google Fonts  ----------------------------#####
+  google_fonts:
+  #####--------------------------------  linkwell  ----------------------------#####
+  linkwell: #^0.1.9
+  #####-----------------------------  auto_direction  ----------------------------#####
+  auto_direction: ^0.0.4+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/pdf/
+    - assets/json/
+    - assets/arabic_quran/
+    - assets/praying_time/
+    - assets/elqibla/
+    - assets/azkar/
