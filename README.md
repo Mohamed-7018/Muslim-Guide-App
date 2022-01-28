@@ -270,4 +270,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
   </h1>
 
 ![74797-thank-you-with-confetti](https://user-images.githubusercontent.com/80456446/140656223-3b3f6572-6551-49d7-ae96-8b9e1e940791.gif)
-"# Muslim-Guide-App" 
+
