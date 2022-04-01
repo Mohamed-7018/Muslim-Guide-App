@@ -1,5 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:muslim_dialy_guide/screens/ad3ya_app/ad3ya_main_app.dart';
+import 'package:muslim_dialy_guide/screens/ad3ya_app/quraan_ad3ya.dart';
+import 'package:muslim_dialy_guide/screens/ad3ya_app/sunna_ad3ya.dart';
 import 'package:muslim_dialy_guide/screens/azkar_app/azkar_main_page.dart';
 import 'package:muslim_dialy_guide/screens/azkar_app/morning_night/home.dart';
 import 'package:muslim_dialy_guide/screens/azkar_app/salah_azkar.dart';
@@ -45,5 +48,8 @@ Map<String, Widget Function(BuildContext)> appRoutes = {
   MotshabhatElqoraan.routeName : (context) =>MotshabhatElqoraan(),
   /*------------------- Rate the app Screen  ---------------------------*/
   AppRatePageView.routeName : (context) =>AppRatePageView(),
+  Ad3yaMainPage.routeName : (context) => Ad3yaMainPage(),
+  Ad3yaElquraan.routeName : (context) => Ad3yaElquraan(),
+  Ad3yaElsunnah.routeName : (context) => Ad3yaElsunnah(),
 
 };
