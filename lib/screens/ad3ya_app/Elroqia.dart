@@ -80,7 +80,7 @@ var elroqia = [
 
 
 class ElroqiaPage extends StatefulWidget {
-  static const String routeName = '/ad3yatelsunnah';
+  static const String routeName = '/elroqia';
 
   const ElroqiaPage({Key key}) : super(key: key);
 
@@ -93,7 +93,7 @@ class _AzkarElsalahState extends State<ElroqiaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: GlobalAppBar(
-        title: "Ad3ya from Quraan",
+        title: "Elroqia",
       ),
       body:
       ListView.builder(

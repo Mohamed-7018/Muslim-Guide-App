@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:muslim_dialy_guide/screens/ad3ya_app/Elroqia.dart';
 import 'package:muslim_dialy_guide/screens/ad3ya_app/quraan_ad3ya.dart';
 import 'package:muslim_dialy_guide/screens/ad3ya_app/sunna_ad3ya.dart';
 import 'package:muslim_dialy_guide/screens/azkar_app/salah_azkar.dart';
@@ -67,24 +68,24 @@ class _AzkarElmoslemMainPageState extends State<Ad3yaMainPage> {
                           (index) => InkWell(
                         onTap: () {
                           /*-----------------------------------------------------------------------------------------------*/
-                          /*--------------------------------  Morning/Night home  -----------------------------------*/
+                          /*--------------------------------  Ad3yaElquraan home  -----------------------------------*/
                           /*-----------------------------------------------------------------------------------------------*/
                           if (index == 0) {
                             Navigator.pushNamed(
                                 context, Ad3yaElquraan.routeName);
                           }
                           /*-----------------------------------------------------------------------------------------------*/
-                          /*--------------------------------  Azkar elsalah  -----------------------------------*/
+                          /*--------------------------------  Ad3ya Elsunnah  -----------------------------------*/
                           /*-----------------------------------------------------------------------------------------------*/
                           if (index == 1) {
                             Navigator.pushNamed(
                                 context, Ad3yaElsunnah.routeName);
                           }
                           /*-----------------------------------------------------------------------------------------------*/
-                          /*--------------------------------  Azkar elnom  -----------------------------------*/
+                          /*--------------------------------  ElroqiaPage  -----------------------------------*/
                           /*-----------------------------------------------------------------------------------------------*/
                           if (index == 2) {
-                            Navigator.pushNamed(context, AzkarElnom.routeName);
+                            Navigator.pushNamed(context, ElroqiaPage.routeName);
                           }
                         },
                         splashColor: color2,

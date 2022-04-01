@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:muslim_dialy_guide/screens/ad3ya_app/Elroqia.dart';
 import 'package:muslim_dialy_guide/screens/ad3ya_app/ad3ya_main_app.dart';
 import 'package:muslim_dialy_guide/screens/ad3ya_app/quraan_ad3ya.dart';
 import 'package:muslim_dialy_guide/screens/ad3ya_app/sunna_ad3ya.dart';
@@ -51,5 +52,6 @@ Map<String, Widget Function(BuildContext)> appRoutes = {
   Ad3yaMainPage.routeName : (context) => Ad3yaMainPage(),
   Ad3yaElquraan.routeName : (context) => Ad3yaElquraan(),
   Ad3yaElsunnah.routeName : (context) => Ad3yaElsunnah(),
+  ElroqiaPage.routeName : (context) => ElroqiaPage(),
 
 };

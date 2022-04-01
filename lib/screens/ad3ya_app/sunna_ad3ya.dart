@@ -333,7 +333,7 @@ class _AzkarElsalahState extends State<Ad3yaElsunnah> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: GlobalAppBar(
-        title: "Ad3ya from Quraan",
+        title: "Ad3ya from Sunnah",
       ),
       body:
       ListView.builder(
