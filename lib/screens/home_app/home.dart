@@ -5,12 +5,14 @@ import 'package:muslim_dialy_guide/screens/home_app/hint_circle.dart';
 import 'package:muslim_dialy_guide/screens/praying_time/praying_time.dart';
 import 'package:muslim_dialy_guide/screens/qiblat/qibla.dart';
 import 'package:muslim_dialy_guide/screens/quran_count/main.dart';
+import 'package:muslim_dialy_guide/screens/rate_the_app/rate_the_app.dart';
 import 'package:muslim_dialy_guide/screens/sbha/sbha.dart';
 import 'package:muslim_dialy_guide/screens/splash_screens/arabic_quran_splash_screen.dart';
 import 'package:muslim_dialy_guide/widgets/custom_background.dart';
 import 'package:muslim_dialy_guide/widgets/home_container.dart';
 import 'package:muslim_dialy_guide/constants.dart';
 
+import '../rate_the_app/app_rate_page_view.dart';
 import 'delayed_animation.dart';
 
 class MuslimGuideHomePage extends StatefulWidget {
@@ -167,6 +169,14 @@ class _MuslimGuideHomePageState extends State<MuslimGuideHomePage> {
                                   title: "El-Qibla"),
                               onTap: () => Navigator.pushNamed(
                                   context, QiblaPage.routeName),
+                            ),
+                            GestureDetector(
+                              child: HomeContainer(
+                                  image: "assets/img.png",
+                                  color: color2,
+                                  title: "Rate the App"),
+                              onTap: () => Navigator.pushNamed(
+                                  context, AppRatePageView.routeName),
                             ),
                           ],
                         ),

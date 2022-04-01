@@ -40,6 +40,10 @@ dependencies:
   auto_direction: ^0.0.4+1
   location:
   geocoder: ^0.2.1
+#  ####--------------------------- local notification --------------------------#####
+#  flutter_local_notifications: ## ^5.0.0+1
+#  ####--------------------------- native time zone --------------------------#####
+#  flutter_native_timezone: ^1.0.10
 
   ##### -----------------------------------------------------------------------#####
   #####-------------------  Motsahbhat el quraan   ----------------------------#####
@@ -54,6 +58,8 @@ dependencies:
   #####-----------------------------  localization lib  ----------------------------#####
   flutter_localizations:
     sdk: flutter
+  #####----------------------------- flare actor ------------------------#####
+  flare_flutter: ^2.0.3
 
 dependency_overrides:
   platform: ^3.1.0
@@ -74,3 +80,4 @@ flutter:
     - assets/praying_time/
     - assets/elqibla/
     - assets/azkar/
+    - assets/flares/

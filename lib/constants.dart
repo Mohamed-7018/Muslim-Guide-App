@@ -1,7 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:muslim_dialy_guide/widgets/show_alert_dialog.dart';
 
 
 class Constants {
+ static String rate;
+ //-------------------------------------------------------------------/
+ //----------------- submit alert dialog --------------------------/
+ //-------------------------------------------------------------------/
+ static Future<void> confirmCopyLink(BuildContext context,
+     {String link,
+      @required String title,
+      @required String content,
+      @required String defaultActionText,
+      String cancelActionText}) async {
+  final dialogRequestSignOut = await showAlertDialogue(
+   context,
+   title: title,
+   content: content,
+   defaultactiontext: defaultActionText,
+   cancelactiontext: cancelActionText,
+  );
+  if (dialogRequestSignOut == true && link != null) {
+   //Constants.launchUniversalLink(link);
+  } else {}
+ }
  /*---------------------------------------------------------------------------------------------*/
 /*-------------------------------------- Lat/Long  ------------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
