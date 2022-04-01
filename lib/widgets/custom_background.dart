@@ -65,7 +65,7 @@ class CustomBackground extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Text(
-              "Mohamed Samir",
+              "  ",
               style: TextStyle(color: Colors.white, fontSize: 18),
             ),
             Text(

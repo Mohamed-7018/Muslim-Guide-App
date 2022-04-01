@@ -42,7 +42,7 @@ class _MuslimGuideHomePageState extends State<MuslimGuideHomePage> {
                   children: [
                     DelayedAnimation(
                       child: Text(
-                        " Mohamed Samir",
+                        " Muslim Guide",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 35.0,
@@ -50,16 +50,16 @@ class _MuslimGuideHomePageState extends State<MuslimGuideHomePage> {
                       ),
                       delay: delayedAmount + 1000,
                     ),
-                    DelayedAnimation(
-                      child: Text(
-                        "Muslim Guide",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 35.0,
-                        ),
-                      ),
-                      delay: delayedAmount + 2000,
-                    ),
+                    // DelayedAnimation(
+                    //   child: Text(
+                    //     "Your guide to gennah",
+                    //     style: TextStyle(
+                    //       fontWeight: FontWeight.bold,
+                    //       fontSize: 35.0,
+                    //     ),
+                    //   ),
+                    //   delay: delayedAmount + 2000,
+                    // ),
                     SizedBox(
                       height: 15.0,
                     ),
