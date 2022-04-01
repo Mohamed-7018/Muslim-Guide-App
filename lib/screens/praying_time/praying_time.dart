@@ -1,11 +1,18 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:location/location.dart';
 import 'package:muslim_dialy_guide/models/praying_time.dart';
 import 'package:muslim_dialy_guide/widgets/app_bar.dart';
 import 'package:muslim_dialy_guide/widgets/praying_time/praying_time_container.dart';
+import 'package:provider/provider.dart';
 
 import '../../constants.dart';
+import '../../services/location_services.dart';
+import '../../widgets/comming_soon/spinner.dart';
+
+import 'package:geocoder/geocoder.dart';
 
 class PrayingTime extends StatefulWidget {
   static const String routeName = 'prayingTime';
@@ -68,18 +75,71 @@ class _PrayingTimeState extends State<PrayingTime> {
   @override
   void initState() {
     super.initState();
+    // getLocation(context);
+    // getPrayerTimes();
+  }
+  @override
+  void dispose() {
+    super.dispose();
+    // getLocation(context).dispose();
+    // getPrayerTimes().dispose();
+  }
 
-    getPrayerTimes();
+
+  getLocation (BuildContext context) {
+    var userLocation = Provider.of<UserLocation>(context);
+    Constants.lat = userLocation?.latitude;
+    Constants.long = userLocation?.longitude;
+    print ( Constants.lat);
+    print (Constants.long);
+    print ("A7aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+  }
+
+  getUserLocation() async {//call this async method from whereever you need
+    LocationData myLocation;
+    String error;
+    Location location = new Location();
+    try {
+      myLocation = await location.getLocation();
+    } on PlatformException catch (e) {
+      if (e.code == 'PERMISSION_DENIED') {
+        error = 'please grant permission';
+        print(error);
+      }
+      if (e.code == 'PERMISSION_DENIED_NEVER_ASK') {
+        error = 'permission denied- please enable it from app settings';
+        print(error);
+      }
+      myLocation = null;
+    }
+    var currentLocation = myLocation;
+    final coordinates = new Coordinates(
+        myLocation.latitude, myLocation.longitude);
+    var addresses = await Geocoder.local.findAddressesFromCoordinates(
+        coordinates);
+    var first = addresses.first;
+    address ='${first.locality}, ${first.adminArea}';
+
+    print(' ${first.locality}, ${first.adminArea},${first.subLocality}, ${first.subAdminArea},${first.addressLine}, ${first.featureName},${first.thoroughfare}, ${first.subThoroughfare}');
+    return first;
   }
 
   @override
   Widget build(BuildContext context) {
+    getLocation(context);
+    getUserLocation();
+    Constants.lat != null || Constants.long != null ? getPrayerTimes() : (){};
     return Scaffold(
       appBar: GlobalAppBar(
         title: "Praying time",
       ),
       body: SafeArea (
-        child: Center(
+        child: Constants.lat == null || Constants.long == null ?
+        /*-----------------------------------------------------------------------------------------------*/
+        /*-------------------------------------  Spinner -----------------------------------*/
+        /*-----------------------------------------------------------------------------------------------*/
+        Center(child: Spinner(color: color2)) :
+        Center(
           child: Container (
             child: Column (
               crossAxisAlignment: CrossAxisAlignment.center,

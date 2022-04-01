@@ -9,6 +9,7 @@ import 'package:muslim_dialy_guide/screens/home_app/home.dart';
 import 'package:muslim_dialy_guide/screens/praying_time/praying_time.dart';
 import 'package:muslim_dialy_guide/screens/qiblat/qibla.dart';
 import 'package:muslim_dialy_guide/screens/quraan_arabic/quraan_arabic.dart';
+import 'package:muslim_dialy_guide/screens/quran_count/main.dart';
 import 'package:muslim_dialy_guide/screens/sbha/sbha.dart';
 import 'package:muslim_dialy_guide/screens/splash_screens/arabic_quran_splash_screen.dart';
 
@@ -38,5 +39,8 @@ Map<String, Widget Function(BuildContext)> appRoutes = {
   /*------------------------ Sebha Screen  ----------------------------------*/
   SbhaScreen.routeName : (context) =>SbhaScreen(),
   /*------------------------ Coming Screen  ----------------------------------*/
-  ComingSoonSpinner.routeName : (context) =>ComingSoonSpinner()
+  ComingSoonSpinner.routeName : (context) =>ComingSoonSpinner(),
+  /*------------------- Motshabhat Elqoraan Screen  ---------------------------*/
+  MotshabhatElqoraan.routeName : (context) =>MotshabhatElqoraan(),
+
 };

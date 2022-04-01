@@ -4,6 +4,7 @@ import 'package:muslim_dialy_guide/screens/comming%20soon/coming_home_spinner.da
 import 'package:muslim_dialy_guide/screens/home_app/hint_circle.dart';
 import 'package:muslim_dialy_guide/screens/praying_time/praying_time.dart';
 import 'package:muslim_dialy_guide/screens/qiblat/qibla.dart';
+import 'package:muslim_dialy_guide/screens/quran_count/main.dart';
 import 'package:muslim_dialy_guide/screens/sbha/sbha.dart';
 import 'package:muslim_dialy_guide/screens/splash_screens/arabic_quran_splash_screen.dart';
 import 'package:muslim_dialy_guide/widgets/custom_background.dart';
@@ -111,6 +112,17 @@ class _MuslimGuideHomePageState extends State<MuslimGuideHomePage> {
                                   title: "Translated Quraan"),
                               onTap: () => Navigator.pushNamed(
                                   context, ComingSoonSpinner.routeName),
+                            ),
+                            /*-----------------------------------------------------------------------------------------------*/
+                            /*-----------------------------  Motshabhat El Quraan Container  ---------------------------------*/
+                            /*-----------------------------------------------------------------------------------------------*/
+                            GestureDetector(
+                              child: HomeContainer(
+                                  image: "assets/114.png",
+                                  color: color2,
+                                  title: "Mutashabihat al quran"),
+                              onTap: () => Navigator.pushNamed(
+                                  context, MotshabhatElqoraan.routeName),
                             ),
                             /*-----------------------------------------------------------------------------------------------*/
                             /*--------------------------------  Azkar Elmoslem Container  -----------------------------------*/

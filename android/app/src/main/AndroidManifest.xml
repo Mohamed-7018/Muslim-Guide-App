@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.samir.muslimdialyguide.muslim.quraan.muslim_dialy_guide">
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
     <application
         android:label="muslim_dialy_guide"
         android:icon="@mipmap/ic_launcher">
