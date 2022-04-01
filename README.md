@@ -1,9 +1,13 @@
 
 Muslim Guide App     |  Muslim Guide App
 :-------------------------:|:-------------------------:
- ![Screenshot_1636289117](https://user-images.githubusercontent.com/80456446/140644822-ba0f887b-47c8-47d9-9f1f-738b68f1e39c.png) |  ![Screenshot_1636289117](https://user-images.githubusercontent.com/80456446/140648528-7008c93a-fcf9-4758-b338-ede7b69f6f34.png)
+![Screenshot_1648816361](https://user-images.githubusercontent.com/80456446/161264107-4cac1094-a41a-43f9-b9db-16524185f0af.png) | ![Screenshot_1648816369](https://user-images.githubusercontent.com/80456446/161264115-9b082e0f-50b2-411c-81b1-a6630c2a7a85.png)
+<!--  ![Screenshot_1636289117](https://user-images.github
+usercontent.com/80456446/140644822-ba0f887b-47c8-47d9-9f1f-738b68f1e39c.png) |  ![Screenshot_1636289117](https://user-images.githubusercontent.com/80456446/140648528-7008c93a-fcf9-4758-b338-ede7b69f6f34.png) -->
 <!-- <p align="center"><img src="https://user-images.githubusercontent.com/80456446/140644822-ba0f887b-47c8-47d9-9f1f-738b68f1e39c.png" width=250></p>|<p align="center"><img src="https://user-images.githubusercontent.com/80456446/140648528-7008c93a-fcf9-4758-b338-ede7b69f6f34.png" width=250></p>
  -->
+
+
 
 <h3 align="center">
 Muslim Guide App
@@ -33,8 +37,10 @@ Mslim guide app is the app that help the muslims in their dialy habits like read
 Muslim guide app is a very awesome muslim guide build with flutter framework. The app aim is to help muslims in their dialy life azkar as it consists of many aweome apps like:
 - Quraan App
 - Translated Quraan App (Coming soon)
+- Mutashabihat Elquraan
 - Azkar elmoslem (Morning/Night/After Praying/Sleeping)
 - Sebha App
+- Doaa App
 - Praying time (cairo location only - another counteries is coming soon)
 - ElQibla direction (any place all over the world)
 
@@ -44,7 +50,7 @@ Maybe the app idea is not compoletely new, and many repos build like these apps 
 
 Screenshot              |  Screenshot
 :-------------------------:|:-------------------------:
- ![Screenshot_1636289117](https://user-images.githubusercontent.com/80456446/140645470-62e5c6d5-4b9a-4836-8959-3916ddfbd6a3.png) | ![Screenshot_1636289123](https://user-images.githubusercontent.com/80456446/140645507-8cb1d32e-2afe-4ab5-ae1d-1260953afc5c.png)
+![Screenshot_1648816361](https://user-images.githubusercontent.com/80456446/161264107-4cac1094-a41a-43f9-b9db-16524185f0af.png) | ![Screenshot_1648816369](https://user-images.githubusercontent.com/80456446/161264115-9b082e0f-50b2-411c-81b1-a6630c2a7a85.png)
 
 
 ## Quraan App
@@ -71,6 +77,11 @@ Hint : The App will come in the coming version
  https://user-images.githubusercontent.com/80456446/140646389-a05977d3-a6a3-4380-9dba-090739b3e123.mp4
 
 
+## Mutashabihat El Quraan App
+Searching By Word and getting the Surah & the Ayah where the word is located and how many times the word is repeated in quran.
+
+![114 App in use](https://i.imgur.com/XMPUwA7.gif)
+
 ## Azkar App
 The app helps you in your dialy azkar.
 
@@ -96,12 +107,52 @@ The app helps you in tasbehing dialy.
 
 
 
+## Doaa App
+The app helps you in your dialy doaa.
+ Doaa App               |   Doaa App
+:-------------------------:|:-------------------------:
+![Screenshot_1648816816](https://user-images.githubusercontent.com/80456446/161265456-98e71100-b88f-4ac8-a78e-0c4bac1223ee.png)! | ![Screenshot_1648817162](https://user-images.githubusercontent.com/80456446/161266674-cbb55a83-78fe-42f7-b9a1-cee56eac4f71.png)
+
+
+
+ Doaa App               |   Doaa App
+:-------------------------:|:-------------------------:
+![Screenshot_1648816920](https://user-images.githubusercontent.com/80456446/161266342-b8a4d055-da41-476b-abaa-b05c22eb7d9b.png) |![Screenshot_1648816822](https://user-images.githubusercontent.com/80456446/161265468-772d6cfc-439a-4c6f-81c4-78267a46ed11.png)
+
+
+
 ## Praying time and Qibla
 The app help you to know the praying time in your current location, also the qibla.
 hint : Praying time (cairo location only - another counteries is coming soon)
  Praying time App               |   Qibla App
 :-------------------------:|:-------------------------:
 ![Screenshot_1636292060](https://user-images.githubusercontent.com/80456446/140647322-d955b33e-bce0-49e5-b0c5-eb6ea982c510.png) | ![Screenshot_1636292164](https://user-images.githubusercontent.com/80456446/140647324-0c41224b-67fd-4077-af8a-c1001951d8f4.png)
+
+## Feedback Emotions Google Sheet Database
+
+
+ New Animated flutter rate UI with animated emotions based on the rate of the user, also it take a written feedack and upload it to google sheet file as shown in the following video.
+
+
+https://user-images.githubusercontent.com/80456446/135735239-53e577c1-a270-4d48-acf9-61ce00c55269.mp4
+
+
+
+## google sheet databse
+
+The idea of this project is to upload the feedbacks to google sheet, so in this project we use the google sheet as a databse.
+
+![maxresdefault](https://user-images.githubusercontent.com/80456446/135735384-23955913-1b1d-4302-958f-1e93c5fbef66.jpg)
+
+
+## App Script
+To open app script, which we will be used to create and deploy api so we can use google sheet as a database. To do this please follow th following steps;
+
+- Open App Script from tools-->Script editor
+- write the foolowing .gs code
+![image](https://user-images.githubusercontent.com/80456446/135735468-4492ef11-5af9-4f32-a476-6f5fe6476ffa.png)
+- open the google sheet acess
+- deploy the app to web app
 
 
 ## Light Mode & Dark Mode
