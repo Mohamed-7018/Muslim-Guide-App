@@ -6,9 +6,9 @@ import 'package:muslim_dialy_guide/app/core/utils/values.dart';
 /*------------------------------------------------------------------------------------------*/
 
 var commonTheme = ThemeData(
-  primaryColor: GlobalAppColors.appBlue,
-  dividerColor: GlobalAppColors.appPink,
+  primaryColor: GlobalAppColors.appGray,
+  dividerColor: GlobalAppColors.appBlue,
   colorScheme:
-      ColorScheme.fromSwatch().copyWith(secondary: GlobalAppColors.appPink),
+      ColorScheme.fromSwatch().copyWith(secondary: GlobalAppColors.appBlue),
   visualDensity: VisualDensity.adaptivePlatformDensity,
 );

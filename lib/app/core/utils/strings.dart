@@ -19,4 +19,12 @@ mixin GlobalAppStrings {
   static const String elqibla = "El-Qibla";
   static const String rateTheApp = "Rate the app";
   static const String appTheme = "App theme";
+
+  /* -------------------------------------------------------------*/
+  /* -----------------Azkar app strings --------------------------*/
+  /* -------------------------------------------------------------*/
+  static const String hisnElmoslem = "Hisn El-Moslem";
+  static const String index = "Index";
+  static const String favouriteContent = "favourites content";
+  static const String favouriteZikr = "favourites zikr";
 }

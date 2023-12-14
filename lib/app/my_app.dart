@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:muslim_dialy_guide/app/core/router/app_routes.dart';
 import 'package:muslim_dialy_guide/app/core/theme/dark_theme.dart';
 import 'package:muslim_dialy_guide/app/core/theme/light_theme.dart';
+import 'package:muslim_dialy_guide/app/data/provider/azkar_provider/azkar_fehrs_provider.dart';
 import 'package:muslim_dialy_guide/app/data/provider/theme_provider.dart';
 import 'package:muslim_dialy_guide/app/view/screens/home_page/home_page.dart';
 import 'package:provider/provider.dart';
@@ -20,12 +19,16 @@ class MyApp extends StatelessWidget {
         /*-----------------------------------------------------------------------------------------------*/
         ChangeNotifierProvider<ThemeProvider>(
             create: (context) => ThemeProvider()),
+        /*-----------------------------------------------------------------------------------------------*/
+        /*---------------------------------------  azkar Provider  --------------------------------------*/
+        /*-----------------------------------------------------------------------------------------------*/
+        ChangeNotifierProvider<AzkarFehrsProvider>(
+            create: (context) => AzkarFehrsProvider()),
       ],
       builder: (context, child) {
         return Consumer<ThemeProvider>(
           builder: (context, value, child) {
             return MaterialApp(
-              useInheritedMediaQuery: true,
               // locale: DevicePreview.locale(context),
               // builder: DevicePreview.appBuilder,
               debugShowCheckedModeBanner: false,

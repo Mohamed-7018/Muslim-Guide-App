@@ -18,19 +18,19 @@ class CustomBackground extends StatelessWidget {
           height: GlobalAppSizes.s_250,
         )),
         Positioned(
-          top: - GlobalAppSizes.s_40,
-          right: - GlobalAppSizes.s_50,
+          top: -GlobalAppSizes.s_40,
+          right: -GlobalAppSizes.s_50,
           child: CustomBox(
             angulo: GlobalAppSizes.s_1p6,
-            color: GlobalAppColors.appPink,
+            color: GlobalAppColors.appBlue,
           ),
         ),
         Positioned(
-          top: - GlobalAppSizes.s_40,
-          right: - GlobalAppSizes.s_60,
+          top: -GlobalAppSizes.s_40,
+          right: -GlobalAppSizes.s_60,
           child: CustomBox(
-            angulo:GlobalAppSizes.s_1p2,
-            color: GlobalAppColors.appBlue,
+            angulo: GlobalAppSizes.s_1p2,
+            color: GlobalAppColors.appGray,
           ),
         ),
         Positioned(
@@ -43,7 +43,7 @@ class CustomBackground extends StatelessWidget {
 
 Widget _crearContenido(theme, BuildContext context) {
   return Container(
-      height:  GlobalAppSizes.s_250,
+      height: GlobalAppSizes.s_250,
       margin: GlobalAppEdgeInsets.t30r10,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -51,18 +51,18 @@ Widget _crearContenido(theme, BuildContext context) {
         children: [
           Text(
             "  ",
-            style:GlobalAppStyles.customBackgroundTextStyle,
+            style: GlobalAppStyles.customBackgroundTextStyle,
           ),
           Text(
             GlobalAppStrings.muslimGuide,
-            style:GlobalAppStyles.customBackgroundTextStyle,
+            style: GlobalAppStyles.customBackgroundTextStyle,
           ),
           SizedBox(
-            height:  GlobalAppSizes.s_30,
+            height: GlobalAppSizes.s_30,
           ),
           Text(
-             GlobalAppStrings.appTheme,
-            style:GlobalAppStyles.customBackgroundTextStyle,
+            GlobalAppStrings.appTheme,
+            style: GlobalAppStyles.customBackgroundTextStyle,
           ),
           themeIcon(theme, context)
         ],
